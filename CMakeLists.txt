@@ -16,4 +16,4 @@ project(imgui CXX C)
 
 file(GLOB SRC *.cpp backends/imgui_impl_glfw.cpp backends/imgui_impl_opengl3.cpp)
 add_library(imgui ${SRC})
-target_include_directories(imgui PRIVATE src)
+target_include_directories(imgui PRIVATE .)
